@@ -1,10 +1,6 @@
 {
   "name": "rest-express",
-<<<<<<< HEAD
-"homepage": "https://ashwani0117.github.io/login_page",
-=======
   "homepage": "https://ashwani0117.github.io/login_page",
->>>>>>> af73377 (update .gitignore to clean up deployment and development artifacts)
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
@@ -13,20 +9,10 @@
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc",
-<<<<<<< HEAD
-    "db:push": "drizzle-kit push"
-
-
-=======
     "db:push": "drizzle-kit push",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
->>>>>>> af73377 (update .gitignore to clean up deployment and development artifacts)
   },
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@jridgewell/trace-mapping": "^0.3.25",
